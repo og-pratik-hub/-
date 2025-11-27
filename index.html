@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Next‑Gen Education | OG‑PRATIK</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+            background: linear-gradient(135deg, #0a0f24, #1b2a4a);
+            color: white;
+            overflow-x: hidden;
+        }
+
+        header {
+            padding: 20px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            background: rgba(0, 0, 0, 0.4);
+            backdrop-filter: blur(8px);
+        }
+
+        nav a {
+            margin-left: 25px;
+            color: #9ecbff;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #ffffff;
+        }
+
+        .hero {
+            height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            max-width: 700px;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            max-width: 550px;
+            opacity: 0.8;
+        }
+
+        .btn-primary {
+            margin-top: 25px;
+            padding: 12px 28px;
+            background: #3b82f6;
+            border-radius: 8px;
+            color: white;
+            font-size: 1.1rem;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary:hover {
+            background: #2563eb;
+        }
+
+        .section {
+            padding: 60px 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .card {
+            position: relative;
+            overflow: hidden;
+            background: rgba(255, 255, 255, 0.08);
+            padding: 20px;
+            border-radius: 12px;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            box-shadow: 0 0 18px #3b82f6, 0 0 28px #60a5fa;
+            background: rgba(255, 255, 255, 0.15);
+            transform: translateY(-5px);
+        }
+
+        footer {
+            text-align: center;
+            padding: 40px;
+            margin-top: 40px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h2>OG‑PRATIK</h2>
+        <nav>
+            <a href="#features">Features</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>OG-PRATIK-HUB</h1>
+        <p>"The future belongs to those who learn smarter, not harder."</p>
+        <a href="#features" class="btn-primary">Explore</a>
+    </section>
+
+    <section class="section" id="features">
+        <h2>Features</h2>
+        <div class="card-grid">
+            <a href="https://msbte.ac.in/" target="_blank" rel="noopener noreferrer"
+                style="text-decoration:none; color:inherit;">
+                <div class="card">🎓 MSBTE WEB</div>
+            </a>
+            <a href="https://mahadbt.maharashtra.gov.in/login/login" target="_blank" rel="noopener noreferrer"
+                style="text-decoration:none; color:inherit;">
+                <div class="card">💰 MAHADBT WEB</div>
+            </a>
+            <a href="https://web.whatsapp.com/" target="_blank" rel="noopener noreferrer"
+                style="text-decoration:none; color:inherit;">
+                <div class="card">💬 WHATSAPP WEB</div>
+            </a>
+            <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer"
+                style="text-decoration:none; color:inherit;">
+                <div class="card">🤖 CHATGPT</div>
+            </a>
+            <a href="https://www.calculator.net/age-calculator.html" target="_blank" rel="noopener noreferrer"
+                style="text-decoration:none; color:inherit;">
+                <div class="card">📅 AGE CALC WEB</div>
+            </a>
+            <a href="https://deadshot.io/" target="_blank" rel="noopener noreferrer"
+                style="text-decoration:none; color:inherit;">
+                <div class="card">🎮 DEADSHOT.IO</div>
+            </a>
+            <a href="https://wallpapercave.com/" target="_blank" rel="noopener noreferrer"
+                style="text-decoration:none; color:inherit;">
+                <div class="card">🖼️ WALL CAVE</div>
+            </a>
+            <a href="https://econtent.msbte.edu.in/question_papers/" style="text-decoration:none; color:inherit;"
+                target="_blank" rel="noopener noreferrer">
+                <div class="card">📄 PYQ - [ME]</div>
+            </a>
+        </div>
+    </section>
+
+    <section class="section" id="contact">
+        <h2>Contact</h2>
+        <p>Email: pandulepratik512@gmail.com</p>
+    </section>
+
+    <footer>
+        © 2025 OG‑PRATIK — Next‑Gen Education Website<br>
+        All Rights Are Reserved By - PRATIK PANDULE
+    </footer>
+</body>
+
+</html>
